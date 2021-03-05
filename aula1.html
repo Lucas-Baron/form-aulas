@@ -7,6 +7,7 @@
     - action
     - methdo
 -->
+<h1>Fieldset</h1>
 <form action=" " method="GET">
     ...
 </form>
@@ -71,3 +72,38 @@ pertence ao formulário com "id="teste" -->
 -->
 <label for="name">Nome Completo</label>
 <input id="name" type="text">
+
+</br>
+<h1>Button</h1>
+<!--
+    <button>
+    Representa um botão, utilizado com mais frequencia para
+    enviar formularios e sua estilização padrão é feita pelo
+    user agent.
+-->
+<button>Clique aqui para enviar seu Formulário</button>
+
+<!--
+    Atributos comuns:
+        <button type="submit">: faz com que as informaçoes
+    sejam enviadas;
+        <button type="reset">: limpa o formulário;
+        <button autofocus>: quando o botão tem esse atributo
+    significa que está com um auto-foco, ou seja, o botão já
+    está selecionado esperando o comando do "Enter" para enviar
+    as informações.
+        <button disabled>: desabilita o botão;
+        <button form>: faz a linkagem do botão para um 
+    formulário qualquer, atraves do id do form.
+-->
+<form id="teste1" action="">
+    <fieldset>
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+
+    <button>Enviar</button>
+</form>
+<button type="reset" form="teste1">Apagar</button>
