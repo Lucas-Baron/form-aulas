@@ -1,0 +1,51 @@
+<!--
+    <form>
+        - Elemento que definirá um formulário
+        - É um container estilo <section> <footer>
+
+    Atributos básicos
+    - action
+    - methdo
+-->
+<form action=" " method="GET">
+    ...
+</form>
+
+<!--
+    <fieldset>
+        É um elemento que faz um agrupamento de campos que
+        tenham o mesmo propósito.
+    Atributos especiais:
+    <disabled>: desabilita todos os elementos internos;
+    <form>: identifica o id de um formulário ao qual esse
+        fieldset pertence;
+    <name>: nome do grupo;
+    <legend>: é o nome do agrupamento e o primeiro elemento
+        dentro do fieldset.
+-->
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<form id="teste" action="">
+    <fieldset disabled>
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<!-- Com o atributo "form" estou indicando que esse fieldset
+pertence ao formulário com "id="teste" -->
+    <fieldset form="teste">
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
