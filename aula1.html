@@ -107,3 +107,43 @@ pertence ao formulário com "id="teste" -->
     <button>Enviar</button>
 </form>
 <button type="reset" form="teste1">Apagar</button>
+
+</br>
+<h1>Datalist</h1>
+<!--
+    <datalist>
+    Fornece para o usuário uma lista de valores como
+    sugestão de uma tag input, os valores são sugestivos
+    e não obrigatórios, podendo o usuário selecionar um
+    dos valores ou colocar uma valor diferente da sugestão.
+
+    <input list=""> recebe como valor o id de um <datalist>
+    residente no mesmo documento. O atributo "list" serve 
+    para linkar a lista do <datalist> no <input>
+-->
+<input t
+    type="text" 
+    list="fruitsdata"
+    placeholder="Escolha uma fruta"
+>
+
+<datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>orange</option>
+    <option>cherry</option>
+</datalist>
+
+<input 
+    type="color"
+    list="colorsdata"
+>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#ffff00</option>
+    <option>#ff00ff</option>
+    <option>#0000ff</option>
+    <option>#000fff</option>
+</datalist>
