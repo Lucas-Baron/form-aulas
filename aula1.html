@@ -172,3 +172,49 @@ Senha <input type="password">
 <br>
 <br>
 <h1>Input Atributos</h1>
+<!--
+    Atributos comusn para a tag input
+
+autocomplete: vai buscar informações que já foram usadas
+no navegador para completar automaticamente, por exemplo
+o uso do email: autocomplete = "email" nesse campo o 
+atributo dará uma sugestão de autocompletar com um email
+que já tenha sido usado no navegador.
+
+autofocus> Foca automaticamente
+
+disabled> Desabilita o campo
+
+reandonly> Tem a mesma função que o disabled, mas com um aspecto
+diferente.
+
+form = "name" > Linkar os dados do input com os do formulário,
+para serem enviados juntos.
+
+required> é um atributo que faz ser obrigatório o preenchimento
+do campo input.
+
+placeholder> possibilita esrever um texto opaco que indicará
+para que serve o campo.
+
+    Não se pode fazer a troca do label pelo placeholder, pois o
+label ajuda na acessibilidade.
+
+-->
+Autofocus <input type="text" autofocus><br>
+Autocomplete <input type="text" autocomplete="email"><br>
+
+Desabilitar <input type="text" disabled><br>
+
+Rendonly <input type="text" readonly><br>
+
+Form
+<form action="" name="name">
+    <label>Esceva</label>
+</form>
+ <input type="text" form="name"><br>
+
+Preenchimento obrigatório <input type="text" required><br>
+
+<input type="text" placeholder="Digite aqui"><br>
+
