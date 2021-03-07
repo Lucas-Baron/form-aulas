@@ -218,3 +218,66 @@ Preenchimento obrigatório <input type="text" required><br>
 
 <input type="text" placeholder="Digite aqui"><br>
 
+<br>
+<br>
+<h1>Password</h1>
+<!--
+    Serve para inserir uma senha de uma forma mais segura,
+escondendo o que está sendo digitado no campo.
+    Seu estilo de apresentação dependo do usr agent.
+
+    Atributos:
+    minglength / maxlength: determina o número mínimo e máximo
+de caracteres para este campo.
+
+    size: o número aceitável de caracteres que esse campo deverá
+conter.
+
+    pattern: Expressão regular para validar o que está sendo
+digitado no campo; Altamente recomendado no uso de um padrão
+de segurança alta de senhas.
+Exemplo:  queremos determinar que a senha de conter caracteres
+hexadeciamais com o limite de no minimo 4 e no maximo 5.
+    pattern = "[0 - 9a - fA - F]{4,8}"
+
+[0 - 9a - fA - F] representa os caracteres hexadecimais
+
+    placeholder
+    reandonly / disabled
+    required: o campo será obrigatóro
+    inputmode: podera alterar o uso do teclado em smartphones.
+Exemplo: queremos que o cliente só adicione números:
+    inputmodel = "numeric
+
+    autocomplete:
+        on: permite a sugestão de: new-password ou 
+    current-password  
+        off: desabilita a função de autocompletar
+        new-password: o navegador poderá sugerir uma nova senha.
+-->
+
+<input type= "password"
+    minlength="4"
+>
+
+<input type= "password"
+    maxlength="6"
+>
+
+<input type= "password"
+    size="9"
+>
+<br>
+<br>
+
+<input type= "password"
+pattern = "[0 - 9a - fA - F]{4,8}"
+title="a senha deve conter caracteres hexadeciamais
+com o limite de no minimo 4 e no maximo 5."
+
+> <button>Enviar</button>
+
+
+<br>
+<br>
+<h1>Email</h1>
