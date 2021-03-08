@@ -330,3 +330,43 @@ campo, não serão apresentados como sugestão.
     >
     <button type="submit"> Enviar</button>
 </form>
+<br>
+
+<h1>URL</h1>
+<!--
+    Espera que o usuario digite uma url e irá validar se o valor
+digitado é uma url.
+
+    Atributos
+    placeholder \ reandonly \ disabled \ value \ required \
+    minlength \ maxlength \ size
+
+    pattern: uso da expressão regular para validar o campo.
+Exemplo: o usuário só pode colocar domínio  .com .br
+    pattern = ".*\.com\.br/\.*"
+
+    list: o mesmo resumo e exemplo do atributo "eamil"
+    spellcheck: habilta a verificação ortográfica para este
+input
+-->
+<form action="">
+
+    <datalist id="urlsdata">
+        <option> joaorocketseat.com.br</option>
+        <option> joserocketseat.com.br</option>
+    </datalist>
+
+    <label for="">URL</label>
+    <input type="url"
+    placeholder="http://example.com.br"
+    pattern=".*\.com\.br\.*"
+    title="Somente domínios  .com .br serão aceitos"
+    required
+    list="urlsdata"
+    spellcheck="true"
+    >
+    <button type="submit">Enviar</button>
+</form>
+<br>
+
+<h1>File</h1>
