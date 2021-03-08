@@ -546,4 +546,27 @@ para vizualização</h3>
     </select>
 </form>
 
-<br><hr><br
+<br><hr><br>
+
+<h1>Optgroup</h1>
+<p>Faz o agrupamento do option dentro do select</p>
+<h3>Exemplo:</h3>
+
+<form action="">
+    <label for="">Please choose or more pets:
+        <select name="pets" multiple size="8">
+            <optgroup label="4-legged pets">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="Hamister" disabled>Hamster</option>
+            </optgroup>
+
+            <optgroup label="Flying pets">
+                <option value="parrot">Parrot</option>
+                <option value="macaw">Macaw</option>
+                <option value="albatross">Albatross</option>
+            </optgroup>
+        </select>
+
+    </label>
+</form>
