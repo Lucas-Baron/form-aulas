@@ -281,3 +281,52 @@ com o limite de no minimo 4 e no maximo 5."
 <br>
 
 <h1>Email</h1>
+<!--
+    Esse elemento espera que o usuário digite um email e irá
+validar se o valor digitado é um eamil.
+
+    Atributos:
+    placeholder \ reandonly \ disabled \ value \ required
+
+    multiple: permite que o campo receba 1 ou mais emails,
+separados por vírgula.
+
+    minlength \ maxlength: o número minimo ou maximo de 
+caracteres aceitáveis no campo d email.
+
+    size: valor numérico indicando quantos caracteres esse 
+campo deveria conter, modificando o tamanho do campo para o
+usuário.
+
+    pattern: uso de expressão regular para validar o campo.
+Exemplo: o usuário só poderá colocar o email com domínio
+rocketseat.com.br
+-->
+<form><label for="">Email</label>
+    <input type="email"
+    pattern=".+@rocketseat\.com\.br"
+    title="O campo só aceita emails com domínio 
+    rocketseat.com.br"
+    >
+    <button>Enviar</button>
+
+</form>
+
+<!--
+    list: irá linkar o id de uma tag <datalist> que está no
+mesmo documento.
+    O <datalist> irá conter uma lista de valores pré definidos  
+a fim de sugerir ao usuário quais valores estão disponíveis.
+    Os valores do <datalist> ue não forem compatíveis com o 
+campo, não serão apresentados como sugestão.
+-->
+<form action="">
+    <datalist id="emailslist">
+        <option> joao@rocketseat.com.br</option>
+        <option> jose@rocketseat.com.br</option>
+    </datalist>
+    <input type="email"
+    list="emailslist"
+    >
+    <button type="submit"> Enviar</button>
+</form>
