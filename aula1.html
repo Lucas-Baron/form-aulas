@@ -570,3 +570,50 @@ para vizualização</h3>
 
     </label>
 </form>
+
+<br><hr><br>
+
+<h1>Search</h1>
+<p>Usado para campos de busca</p>
+
+<h3>Atributos</h3>
+<h3><b>aria-lable: </b>Serve como opção para o leitor de tela,
+quando não tem a tag lable</h3>
+
+
+<input type="serch"
+placeholder="Digite sua busca"
+aria-label="Campo de busca"
+>
+<button>Buscar</button>
+
+<br><hr><br>
+
+<h1>Number</h1>
+<p>Permite a entrada de números.</p>
+
+<h3>Atributos</h3>
+<h3><b>min: </b>o valor mínimo que pode inserir</h3>
+<h3><b>max: </b>o valor máximo que pode inserir</h3>
+<h3><b>step </b>o valor do intervalo que irá pular</h3>
+
+<form action="">
+    <label for="">Valor mínimo 10, máximo 1000</label>
+    <input type="number" min="10" max="1000">
+</form>
+
+<form action="">
+    <label for="">Adiciona ou subtrai valores no 
+        intervalo 125 números</label>
+     <input type="number" step="125" max="1000">
+</form>
+
+<br><hr><br>
+
+<h1>Ranger</h1>
+<p>É um controle que seleciona um valor numérico</p>
+<p>É do tipo slider ou diea control</p>
+
+<form action="">
+    <input type="range" min="0" max="100" value="10">
+</form>
