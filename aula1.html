@@ -414,3 +414,40 @@ método POST e  o atributo enctype como "multipart/form-data"
     <option> #f0f00f </option>
 </datalist>
 <input type="color" list="colorsdata">
+
+<br>
+<hr>
+<br>
+<h1>Checkbox</h1>
+<p>São caixas que podem ser marcadas, selecionadas para 
+marcar um valor a ser enviado, caso não selecionado, não
+será enviado.
+</p>
+
+<h3>Atributos</h3>
+<p><b>value: </b>valor que aquele campo contém, se não estiver
+presente, o valor será "on" </p>
+<p><b>checked: </b>deixa o campo marcado por padrão.</p>
+
+<form action="">
+    <fieldset>
+
+        <legend>Choose your interests</legend>
+        <div>
+            <input type="checkbox" id="coding" name="interest"
+            value="coding" checked>
+            <label for="coding">Coding</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="music" name="interest"
+            value="music">
+            <label for="music">Music</label>
+        </div>
+
+    </fieldset>
+</form>
+
+<br><hr><br>
+
+<h1>Hidden</h1>
